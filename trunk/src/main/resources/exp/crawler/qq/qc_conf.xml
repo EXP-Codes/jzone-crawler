@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  
+    <monitor caption="应用监控">
+        <testServer caption="授权管理页面: 测试服务器"><![CDATA[https://lyy289065406.github.io/certificate/]]></testServer>
+        <officialServer caption="授权管理页面: 正式服务器"><![CDATA[http://lyy289065406.gitee.io/certificate/]]></officialServer>
+    </monitor>
+  
+</config>
