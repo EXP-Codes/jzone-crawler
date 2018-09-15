@@ -6,7 +6,7 @@
 	<!--项目基本信息(必填)-->
 	<groupId>exp.crawler</groupId>
 	<artifactId>qzone-crawler</artifactId>
-	<version>2.2</version>
+	<version>2.3-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>QQ空间爬虫</name>
