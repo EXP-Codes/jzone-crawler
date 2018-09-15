@@ -3,6 +3,7 @@ package exp.crawler.qq.bean;
 import java.util.Date;
 
 import exp.crawler.qq.utils.EncryptUtils;
+import exp.libs.utils.other.StrUtils;
 import exp.libs.warp.net.cookie.WebKitCookie;
 
 /**
@@ -70,7 +71,10 @@ public class QQCookie extends WebKitCookie {
 	protected boolean takeCookieNVE(String name, String value, Date expires) {
 		boolean isKeep = true;
 		
-		if(SIG_KEY.equalsIgnoreCase(name)) {
+		if(StrUtils.isTrimEmpty(value)) {
+			isKeep = false;
+			
+		} else if(SIG_KEY.equalsIgnoreCase(name)) {
 			this.sig = value;
 			
 		} else if(VCODE_KEY.equalsIgnoreCase(name)) {

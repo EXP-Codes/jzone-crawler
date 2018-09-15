@@ -11,7 +11,7 @@
 
 	<name>QQ空间爬虫</name>
 	<description>可爬取QQ相册和说说的图文数据并进行归整</description>
-	<url>https://github.com/lyy289065406/expcodes.git/trunk/java/99-project/qzone-worm</url>
+	<url>https://github.com/lyy289065406/jzone-crawler</url>
 	<inceptionYear>2016-06-09</inceptionYear>
 
 	<!--项目的问题管理系统(可选)-->
@@ -29,9 +29,9 @@
 	<!-- 软件配置管理 -->
 	<scm>
 		<!-- 项目SVN主干目录（需保证目录已存在） -->
-		<connection>scm:svn:https://github.com/lyy289065406/expcodes.git/trunk/java/99-project/qzone-worm/trunk</connection>
-		<developerConnection>scm:svn:https://github.com/lyy289065406/expcodes.git/trunk/java/99-project/qzone-worm/trunk</developerConnection>
-		<url>scm:svn:https://github.com/lyy289065406/expcodes.git/trunk/java/99-project/qzone-worm/trunk</url>
+		<connection>scm:svn:https://github.com/lyy289065406/jzone-crawler/trunk</connection>
+		<developerConnection>scm:svn:https://github.com/lyy289065406/jzone-crawler/trunk</developerConnection>
+		<url>scm:svn:https://github.com/lyy289065406/jzone-crawler/trunk</url>
 	</scm>
 
 	<!-- 变量定义 -->
@@ -39,8 +39,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<release.dir>${project.build.directory}/${project.artifactId}-${project.version}</release.dir>
 		<jdk.version>1.7</jdk.version>
-        <explibs.version>1.0-SNAPSHOT</explibs.version>
-        <mrp.plugin.version>1.0-SNAPSHOT</mrp.plugin.version>
+        <explibs.version>1.0</explibs.version>
+        <mrp.plugin.version>1.0</mrp.plugin.version>
 	</properties>
 
 	<!-- 项目依赖 -->
@@ -246,7 +246,7 @@
 				<version>2.3.2</version>
 				<configuration>
 					<!-- 项目的SVN基线目录（需保证目录已存在） -->
-					<tagBase>https://github.com/lyy289065406/expcodes.git/trunk/java/99-project/qzone-worm/tags</tagBase>
+					<tagBase>https://github.com/lyy289065406/jzone-crawler/tags</tagBase>
 				</configuration>
 			</plugin>
 
