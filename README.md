@@ -1,6 +1,11 @@
 # jzone-crawler
 　QQ空间爬虫（Java版）
 
+> ***暗恋神器***
+<br/>　*在你心中是否有一个默默关注的小姐姐？*
+<br/>　*你是否想知道在遇见她之前在她身边的一切？*
+<br/>　*确认过眼神，让你总在对的时间遇上对的人*
+
 ------
 
 
@@ -38,7 +43,7 @@
 
 ## 安装与使用
 
-- 01.　安装JDK环境【[jdk-7u72-windows-x64.exe](https://lyy289065406.github.io/environment/environment/java/JDK/windows/x64/jdk-7u72-windows-x64.exe)】，一直 下一步 到完成即可（无需修改安装路径）
+- 01.　安装JDK环境【[jdk-7u72-windows-x64.exe](https://github.com/lyy289065406/environment/tree/master/environment/java/JDK/windows/x64/jdk-7u72-windows-x64.exe)】，一直 下一步 到完成即可（无需修改安装路径）
 - 02.　解压并运行【QQ空间爬虫.exe】
 - 03.　选择【爬取相册数据】或【爬取说说数据】即可自动批量下载 `图片及其相关信息` 
 - 04.　所下载的数据会自动整理到程序根目录下的 `data` 文件夹：
