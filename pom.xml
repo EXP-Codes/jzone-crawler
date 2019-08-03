@@ -38,9 +38,9 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<release.dir>${project.build.directory}/${project.artifactId}-${project.version}</release.dir>
-		<jdk.version>1.7</jdk.version>
-        <explibs.version>1.0</explibs.version>
-        <mrp.plugin.version>1.0</mrp.plugin.version>
+		<jdk.version>1.8</jdk.version>
+        <explibs.version>1.2-SNAPSHOT</explibs.version>
+        <mrp.plugin.version>1.1-SNAPSHOT</mrp.plugin.version>
 	</properties>
 
 	<!-- 项目依赖 -->
@@ -396,7 +396,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-antrun-plugin</artifactId>
-                <version>1.7</version>
+                <version>1.8</version>
                 <executions>
                     <execution>
                         <id>ant-build</id>
@@ -472,13 +472,16 @@
                     <charset>UTF-8</charset>
                     <encoding>UTF-8</encoding>
                     <docencoding>UTF-8</docencoding>
-                    <outputEncondig>UTF-8</outputEncondig>
-                    <skip>false</skip>  <!-- 是否在项目打包时跳过javadoc -->
+                    
+                    <!-- 从JDK8开始, Javadoc中添加了doclint, 目的是旨在获得符合W3C HTML 4.01标准规范的HTML文档 -->
+                    <!-- 简而言之Javadoc不允许出现html相关的元素, 若旧注释含有这些元素又不想修改, 只能关闭doclint -->
+                    <additionalOptions>
+                        <additionalOption>-Xdoclint:none</additionalOption>
+                    </additionalOptions>
                 </configuration>
                 <executions>
                     <execution>
                         <id>attach-javadocs</id>
-                        <phase>install</phase>
                         <goals>
                             <goal>jar</goal>
                         </goals>
